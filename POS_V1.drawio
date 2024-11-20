@@ -7,17 +7,23 @@
         <mxCell id="XiXrMrHAOUW__KzoeqQU-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZFplOWOghQXaEzB4oS0H-4" target="ZFplOWOghQXaEzB4oS0H-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZFplOWOghQXaEzB4oS0H-4" value="Gestión de Transacciones" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="XiXrMrHAOUW__KzoeqQU-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZFplOWOghQXaEzB4oS0H-4" target="XiXrMrHAOUW__KzoeqQU-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFplOWOghQXaEzB4oS0H-4" value="Interfaz de Usuario" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="80" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZFplOWOghQXaEzB4oS0H-5" value="Almacenamiento de Transacciones" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="ZFplOWOghQXaEzB4oS0H-5" value="Módulo de Gestión" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="413.5" y="80" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XiXrMrHAOUW__KzoeqQU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZFplOWOghQXaEzB4oS0H-6" target="ZFplOWOghQXaEzB4oS0H-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZFplOWOghQXaEzB4oS0H-6" value="Interfaz de Usuario" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="ZFplOWOghQXaEzB4oS0H-6" value="Autenticación del Usuario" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="65" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XiXrMrHAOUW__KzoeqQU-3" value="Comunicación con el Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="190" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
