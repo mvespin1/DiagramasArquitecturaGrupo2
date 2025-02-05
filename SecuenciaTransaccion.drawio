@@ -17,7 +17,7 @@
           <mxGeometry x="560" y="90" width="120" height="270" as="geometry" />
         </mxCell>
         <mxCell id="Database" value="Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="770" y="180" width="100" height="140" as="geometry" />
+          <mxGeometry x="690" y="180" width="100" height="140" as="geometry" />
         </mxCell>
         <mxCell id="FormSubmit" value="handleFormSubmit()" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -34,15 +34,15 @@
         <mxCell id="ValidateFields" value="validarCampos()" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="TransactionService" target="TransactionService">
           <mxGeometry width="50" height="50" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SaveToDB" value="INSERT Transacción" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="SaveToDB" value="INSERT Transacción" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.705;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Database">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="439.590909090909" y="278.7105263157895" as="sourcePoint" />
-            <mxPoint x="770" y="278.7105263157895" as="targetPoint" />
+            <mxPoint x="690" y="279" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ConfirmSave" value="200 OK" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="ConfirmSave" value="200 OK" style="endArrow=classic;html=1;rounded=0;exitX=-0.017;exitY=0.557;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Database">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="770" y="257" as="sourcePoint" />
+            <mxPoint x="690" y="257" as="sourcePoint" />
             <mxPoint x="439.590909090909" y="257" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -51,6 +51,15 @@
         </mxCell>
         <mxCell id="SendToGateway" value="POST /v1/transacciones/sincronizar" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="TransactionService" target="GatewayClient">
           <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-14" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="210" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ZHiZXvCOdi1pjf9QYCbd-14" target="FrontendPOS">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="240" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
