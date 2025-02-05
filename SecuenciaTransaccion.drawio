@@ -1,35 +1,56 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11">
   <diagram name="Página-1" id="tkpmx5HUAmSLAqPTgBW0">
-    <mxGraphModel dx="800" dy="418" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="978" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="FrontendPOS" value="Frontend POS" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="90" width="120" height="270" as="geometry" />
+        </mxCell>
         <mxCell id="POSController" value="POSController" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="100" y="90" width="100" height="270" as="geometry" />
+          <mxGeometry x="200" y="90" width="120" height="270" as="geometry" />
         </mxCell>
         <mxCell id="TransactionService" value="TransactionService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="280" y="90" width="120" height="270" as="geometry" />
+          <mxGeometry x="380" y="90" width="120" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="GatewayClient" value="Gateway Client" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="560" y="90" width="120" height="270" as="geometry" />
         </mxCell>
         <mxCell id="Database" value="Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="580" y="210" width="100" height="120" as="geometry" />
+          <mxGeometry x="770" y="180" width="100" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="RequestSave" value="POST /v1/transacciones/guardar" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="FormSubmit" value="handleFormSubmit()" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="149.73076923076917" y="321" as="sourcePoint" />
-            <mxPoint x="340" y="321" as="targetPoint" />
+            <mxPoint x="109.59090909090912" y="159" as="sourcePoint" />
+            <mxPoint x="259.5" y="159" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RequestProcessing" value="POST /v1/pagos/procesar" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="259.590909090909" y="179" as="sourcePoint" />
+            <mxPoint x="439.5" y="179" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ValidateFields" value="validarCampos()" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="TransactionService" target="TransactionService">
           <mxGeometry width="50" height="50" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SaveToDB" value="INSERT Transacción" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="TransactionService" target="Database">
-          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        <mxCell id="SaveToDB" value="INSERT Transacción" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="439.590909090909" y="278.7105263157895" as="sourcePoint" />
+            <mxPoint x="770" y="278.7105263157895" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="ConfirmSave" value="200 OK" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="340" y="253" as="sourcePoint" />
-            <mxPoint x="149.73076923076917" y="253" as="targetPoint" />
+            <mxPoint x="770" y="257" as="sourcePoint" />
+            <mxPoint x="439.590909090909" y="257" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="PrepareDTO" value="convertirAGatewayDTO()" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="TransactionService" target="TransactionService">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SendToGateway" value="POST /v1/transacciones/sincronizar" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="TransactionService" target="GatewayClient">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
