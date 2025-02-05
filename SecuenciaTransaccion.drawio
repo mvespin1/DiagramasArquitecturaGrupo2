@@ -1,14 +1,14 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11">
   <diagram name="Página-1" id="tkpmx5HUAmSLAqPTgBW0">
-    <mxGraphModel dx="978" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1504" dy="354" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="FrontendPOS" value="Frontend POS" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="50" y="90" width="120" height="270" as="geometry" />
+          <mxGeometry x="120" y="90" width="100" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="POSController" value="POSController" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="200" y="90" width="120" height="270" as="geometry" />
+        <mxCell id="POSController" value="TransaccionController" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="230" y="90" width="130" height="270" as="geometry" />
         </mxCell>
         <mxCell id="TransactionService" value="TransactionService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
           <mxGeometry x="380" y="90" width="120" height="270" as="geometry" />
@@ -19,16 +19,10 @@
         <mxCell id="Database" value="Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="690" y="180" width="100" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="FormSubmit" value="handleFormSubmit()" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="FormSubmit" value="handleFormSubmit()" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="FrontendPOS" target="POSController">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="109.59090909090912" y="159" as="sourcePoint" />
+            <mxPoint x="130" y="159" as="sourcePoint" />
             <mxPoint x="259.5" y="159" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="RequestProcessing" value="POST /v1/pagos/procesar" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="259.590909090909" y="179" as="sourcePoint" />
-            <mxPoint x="439.5" y="179" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ValidateFields" value="validarCampos()" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="TransactionService" target="TransactionService">
@@ -53,12 +47,21 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZHiZXvCOdi1pjf9QYCbd-14" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="10" y="210" width="30" height="60" as="geometry" />
+          <mxGeometry x="-40" y="210" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ZHiZXvCOdi1pjf9QYCbd-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ZHiZXvCOdi1pjf9QYCbd-14" target="FrontendPOS">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="240" y="240" as="sourcePoint" />
             <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-16" value="Ingreso del número de tarjeta,&lt;div&gt;cvv, fecha de expiración&lt;/div&gt;&lt;div&gt;y monto&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="180" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RequestProcessing" value="POST /v1/procesamiento&lt;div&gt;-transacciones&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;/procesar&lt;/span&gt;&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;exitX=0.504;exitY=0.391;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="POSController" target="TransactionService">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280.00090909090903" y="190" as="sourcePoint" />
+            <mxPoint x="459.91" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
