@@ -4,44 +4,50 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-1" value="Transacción" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="290" y="90" width="100" height="410" as="geometry" />
+        <mxCell id="frontend" value="Frontend POS" style="shape=umlLifeline;" vertex="1" parent="1">
+          <mxGeometry x="50" y="90" width="100" height="600" as="geometry" />
         </mxCell>
-        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="110" y="320" width="30" height="60" as="geometry" />
+        <mxCell id="backend_pos" value="Backend POS" style="shape=umlLifeline;" vertex="1" parent="1">
+          <mxGeometry x="200" y="90" width="100" height="600" as="geometry" />
         </mxCell>
-        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="ZHiZXvCOdi1pjf9QYCbd-1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="140" y="360" as="sourcePoint" />
-            <mxPoint x="300" y="370" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="gateway" value="Backend Gateway" style="shape=umlLifeline;" vertex="1" parent="1">
+          <mxGeometry x="350" y="90" width="100" height="600" as="geometry" />
         </mxCell>
-        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="340" y="300" as="sourcePoint" />
-            <mxPoint x="549.4999999999998" y="300" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="sistema_externo" value="Sistema Externo" style="shape=umlLifeline;" vertex="1" parent="1">
+          <mxGeometry x="500" y="90" width="100" height="600" as="geometry" />
         </mxCell>
-        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-5" value="Sincronización de la Transacción" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="140" y="330" width="190" height="30" as="geometry" />
+        <mxCell id="msg1" value="Ingresar datos tarjeta y monto" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="frontend" target="backend_pos">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-6" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Crear Transacción&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry width="340" height="90" as="geometry" />
+        <mxCell id="msg2" value="Validar datos y preparar payload" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="backend_pos" target="backend_pos">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-7" value="Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="560" y="270" width="90" height="125" as="geometry" />
+        <mxCell id="msg3" value="POST /procesar" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="backend_pos" target="gateway">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1" source="ZHiZXvCOdi1pjf9QYCbd-7" target="ZHiZXvCOdi1pjf9QYCbd-1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="500.75" y="378.75" as="sourcePoint" />
-            <mxPoint x="350" y="379" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="msg4" value="Crear transacción en BD local" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="gateway" target="gateway">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-9" value="No deja crear un comercio si algún campo no pasa las validaciones" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="360" y="350" width="190" height="30" as="geometry" />
+        <mxCell id="msg5" value="POST /sincronizar" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="gateway" target="sistema_externo">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZHiZXvCOdi1pjf9QYCbd-10" value="&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;RUC, Razon social, nombre comercial, fecha creacion, pagos aceptados, número de cuenta, comisión&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="235" width="210" height="70" as="geometry" />
+        <mxCell id="msg6" value="Procesar transacción" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="sistema_externo" target="sistema_externo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg7" value="Retornar resultado" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="sistema_externo" target="gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg8" value="Actualizar estado y notificar POS" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="gateway" target="backend_pos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg9" value="Polling estado transacción" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="frontend" target="backend_pos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg10" value="Retornar estado transacción" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="backend_pos" target="frontend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg11" value="Mostrar resultado al usuario" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="frontend" target="frontend">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
