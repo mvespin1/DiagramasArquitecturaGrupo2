@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11">
   <diagram name="Página-1" id="tkpmx5HUAmSLAqPTgBW0">
-    <mxGraphModel dx="838" dy="438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="409" dy="214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,9 @@
           <mxGeometry x="500" y="90" width="100" height="600" as="geometry" />
         </mxCell>
         <mxCell id="msg1" value="Ingresar datos tarjeta y monto" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="frontend" target="backend_pos">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="1" y="60" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="msg2" value="Validar datos y preparar payload" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="backend_pos" target="backend_pos">
           <mxGeometry relative="1" as="geometry" />
@@ -41,13 +43,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="msg9" value="Polling estado transacción" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="frontend" target="backend_pos">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="0.6" y="80" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="msg10" value="Retornar estado transacción" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="backend_pos" target="frontend">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="0.2" y="40" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="msg11" value="Mostrar resultado al usuario" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;" edge="1" parent="1" source="frontend" target="frontend">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="0.3333" y="67" relative="1" as="geometry">
+            <mxPoint x="30" y="-7" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
