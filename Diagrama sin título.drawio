@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11">
   <diagram name="Página-1" id="pgAp8Lb_EBB5aLBCv9h4">
-    <mxGraphModel dx="1222" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1318" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,7 +56,7 @@
           <mxGeometry x="390" y="1660" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="G1G5ofTcemGSvDUs-Fhq-14" value="Comisión" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
-          <mxGeometry x="310" y="150" width="540" height="410" as="geometry" />
+          <mxGeometry x="310" y="150" width="140" height="410" as="geometry" />
         </mxCell>
         <mxCell id="G1G5ofTcemGSvDUs-Fhq-32" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="G1G5ofTcemGSvDUs-Fhq-14" vertex="1">
           <mxGeometry y="110" width="650" height="110" as="geometry" />
@@ -64,21 +64,14 @@
         <mxCell id="MppJeXj2Nu261NJ9vOYk-1" value="ManejaSegmentos == true" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="G1G5ofTcemGSvDUs-Fhq-14" vertex="1">
           <mxGeometry x="-10" y="110" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Lr6DO670EFlfs5A5_Lhs-2" value="Envío de las PK" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="G1G5ofTcemGSvDUs-Fhq-14">
+        <mxCell id="Lr6DO670EFlfs5A5_Lhs-2" value="Envío de las PK" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="G1G5ofTcemGSvDUs-Fhq-14" vertex="1">
           <mxGeometry x="104" y="170" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Lr6DO670EFlfs5A5_Lhs-6" value="Crear segmento" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="G1G5ofTcemGSvDUs-Fhq-14">
+        <mxCell id="Lr6DO670EFlfs5A5_Lhs-6" value="Crear segmento" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="G1G5ofTcemGSvDUs-Fhq-14" vertex="1">
           <mxGeometry x="330" y="140" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="G1G5ofTcemGSvDUs-Fhq-16" value="" style="endArrow=classic;html=1;rounded=0;" parent="G1G5ofTcemGSvDUs-Fhq-14" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="350" y="184.5" as="sourcePoint" />
-            <mxPoint x="530" y="184.5" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Lr6DO670EFlfs5A5_Lhs-8" value="Guardar comisión segmento" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="G1G5ofTcemGSvDUs-Fhq-14">
-          <mxGeometry x="350" y="180" width="190" height="30" as="geometry" />
+        <mxCell id="Lr6DO670EFlfs5A5_Lhs-8" value="Guardar comisión segmento" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="G1G5ofTcemGSvDUs-Fhq-14" vertex="1">
+          <mxGeometry x="340" y="180" width="200" height="30" as="geometry" />
         </mxCell>
         <mxCell id="G1G5ofTcemGSvDUs-Fhq-15" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="130" y="380" width="30" height="60" as="geometry" />
@@ -86,28 +79,19 @@
         <mxCell id="G1G5ofTcemGSvDUs-Fhq-18" value="Ingresa datos de la comision:&lt;div&gt;tipo ,transacciones base, y monto base&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="160" y="380" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="G1G5ofTcemGSvDUs-Fhq-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" parent="1" target="G1G5ofTcemGSvDUs-Fhq-14" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="580" y="440" as="sourcePoint" />
-            <mxPoint x="370" y="439" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="520" y="440" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="G1G5ofTcemGSvDUs-Fhq-30" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;CREAR COMISIÓN&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="20" y="60" width="340" height="90" as="geometry" />
         </mxCell>
         <mxCell id="G1G5ofTcemGSvDUs-Fhq-31" value="Comisión Segmento" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
           <mxGeometry x="600" y="150" width="100" height="410" as="geometry" />
         </mxCell>
-        <mxCell id="Lr6DO670EFlfs5A5_Lhs-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="G1G5ofTcemGSvDUs-Fhq-31">
+        <mxCell id="Lr6DO670EFlfs5A5_Lhs-1" value="" style="endArrow=classic;html=1;rounded=0;" parent="G1G5ofTcemGSvDUs-Fhq-31" edge="1" source="G1G5ofTcemGSvDUs-Fhq-14">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-150" y="200" as="sourcePoint" />
             <mxPoint x="50" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lr6DO670EFlfs5A5_Lhs-4" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" edge="1" parent="G1G5ofTcemGSvDUs-Fhq-31">
+        <mxCell id="Lr6DO670EFlfs5A5_Lhs-4" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" parent="G1G5ofTcemGSvDUs-Fhq-31" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="50" y="130" as="sourcePoint" />
             <mxPoint x="50" y="170" as="targetPoint" />
@@ -117,13 +101,29 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="G1G5ofTcemGSvDUs-Fhq-34" value="Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
-          <mxGeometry x="850" y="250" width="90" height="125" as="geometry" />
+          <mxGeometry x="850" y="250" width="90" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="Lr6DO670EFlfs5A5_Lhs-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="Lr6DO670EFlfs5A5_Lhs-7" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1" target="G1G5ofTcemGSvDUs-Fhq-14">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="170" y="430" as="sourcePoint" />
-            <mxPoint x="450" y="430" as="targetPoint" />
+            <mxPoint x="370" y="430" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="G1G5ofTcemGSvDUs-Fhq-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=86.25;entryPerimeter=0;" parent="1" edge="1" target="G1G5ofTcemGSvDUs-Fhq-34" source="G1G5ofTcemGSvDUs-Fhq-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="334.5" as="sourcePoint" />
+            <mxPoint x="840" y="334.5" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wm8nxT1n6YnC8DXKBqLX-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.015;entryY=0.866;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G1G5ofTcemGSvDUs-Fhq-14" target="G1G5ofTcemGSvDUs-Fhq-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="380" as="sourcePoint" />
+            <mxPoint x="740" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wm8nxT1n6YnC8DXKBqLX-2" value="Guardar comisión" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="380" width="200" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
