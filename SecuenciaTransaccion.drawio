@@ -1,104 +1,36 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11">
   <diagram name="Página-1" id="tkpmx5HUAmSLAqPTgBW0">
-    <mxGraphModel dx="117407" dy="83417" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="800" dy="418" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="actor1" value="Cliente" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="50" y="150" width="30" height="60" as="geometry" />
+        <mxCell id="POSController" value="POSController" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="90" width="100" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="frontend" value="Frontend POS" style="shape=umlLifeline;" vertex="1" parent="1">
-          <mxGeometry x="150" y="50" width="120" height="600" as="geometry" />
+        <mxCell id="TransactionService" value="TransactionService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="90" width="120" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="backend" value="Backend POS" style="shape=umlLifeline;" vertex="1" parent="1">
-          <mxGeometry x="300" y="50" width="120" height="600" as="geometry" />
+        <mxCell id="Database" value="Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="580" y="210" width="100" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="gateway" value="Backend Gateway" style="shape=umlLifeline;" vertex="1" parent="1">
-          <mxGeometry x="450" y="50" width="120" height="600" as="geometry" />
-        </mxCell>
-        <mxCell id="processor" value="Sistema Externo" style="shape=umlLifeline;" vertex="1" parent="1">
-          <mxGeometry x="600" y="50" width="120" height="600" as="geometry" />
-        </mxCell>
-        <mxCell id="msg1" value="Ingresar datos tarjeta y monto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.499;entryY=0.503;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="actor1" target="frontend">
-          <mxGeometry x="1" y="60" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="RequestSave" value="POST /v1/transacciones/guardar" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="149.73076923076917" y="321" as="sourcePoint" />
+            <mxPoint x="340" y="321" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="msg2" value="handleFormSubmit()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.507;exitY=0.101;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.527;entryY=0.267;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="frontend" target="frontend">
-          <mxGeometry x="0.5556" y="10" relative="1" as="geometry">
-            <mxPoint x="220" y="110.00000000000364" as="sourcePoint" />
-            <mxPoint x="220" y="210.00000000000364" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="260" y="111" />
-              <mxPoint x="260" y="210" />
-            </Array>
-            <mxPoint as="offset" />
+        <mxCell id="ValidateFields" value="validarCampos()" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="TransactionService" target="TransactionService">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SaveToDB" value="INSERT Transacción" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="TransactionService" target="Database">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ConfirmSave" value="200 OK" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="253" as="sourcePoint" />
+            <mxPoint x="149.73076923076917" y="253" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="msg3" value="Validar datos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.51;entryY=0.525;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.495;exitY=0.582;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="frontend" target="frontend">
-          <mxGeometry x="0.087" relative="1" as="geometry">
-            <mxPoint x="221.20000000000087" y="435.2000000000036" as="sourcePoint" />
-            <mxPoint x="220" y="380" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="230" y="399" />
-              <mxPoint x="230" y="365" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="msg4" value="POST /procesar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.51;exitY=0.502;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.522;entryY=0.332;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="frontend" target="backend">
-          <mxGeometry x="0.4269" y="-21" relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="211" y="249" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="msg5" value="Crear transacción" style="edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.493;entryY=0.19;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.505;exitY=0.197;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="backend">
-          <mxGeometry x="-0.6667" y="160" relative="1" as="geometry">
-            <mxPoint x="365.0400000000116" y="204" as="sourcePoint" />
-            <mxPoint x="363.00000000000347" y="149.99999999998545" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="400" y="170" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="msg6" value="Guardar en BD" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="420" y="272" as="sourcePoint" />
-            <mxPoint x="420" y="292" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="msg7" value="POST /sincronizar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="420" y="312" as="sourcePoint" />
-            <mxPoint x="450" y="312" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="msg8" value="Validar transacción" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="gateway" target="gateway">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="msg9" value="POST /validar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="gateway" target="processor">
-          <mxGeometry x="0.6" y="80" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="msg10" value="Procesar transacción" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="processor" target="processor">
-          <mxGeometry x="0.2" y="40" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="msg11" value="Respuesta (AUT/REC)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="processor" target="gateway">
-          <mxGeometry x="0.3333" y="67" relative="1" as="geometry">
-            <mxPoint x="30" y="-7" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="msg12" value="Actualizar estado en BD" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="gateway" target="gateway" />
-        <mxCell id="msg13" value="Notificar POS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="gateway" target="backend" />
-        <mxCell id="msg14" value="Actualizar estado" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="backend" target="backend" />
-        <mxCell id="msg15" value="Frontend recibe estado" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="backend" target="frontend" />
-        <mxCell id="msg16" value="Mostrar resultado" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="frontend" target="frontend" />
       </root>
     </mxGraphModel>
   </diagram>
