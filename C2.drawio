@@ -427,7 +427,7 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <object placeholders="1" c4Type="Relationship" c4Description="Sends the number of processed transactions." label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;" id="MzmgPBC9124IkXvvizs8-98">
+        <object placeholders="1" c4Type="Relationship" c4Description="Assigns an invoice to the commerce." label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;" id="MzmgPBC9124IkXvvizs8-98">
           <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MzmgPBC9124IkXvvizs8-82" target="MzmgPBC9124IkXvvizs8-81">
             <mxGeometry x="0.0789" y="80" width="240" relative="1" as="geometry">
               <mxPoint x="2100" y="1820" as="sourcePoint" />
