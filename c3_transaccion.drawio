@@ -1,9 +1,60 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.11">
-  <diagram name="Página-1" id="jXBFUEjse5fDsVkTgEGG">
-    <mxGraphModel>
+  <diagram name="Microservicio de Transacción C3" id="jXBFUEjse5fDsVkTgEGG">
+    <mxGraphModel dx="2049" dy="1103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-2" value="POS&#xa;[Sistema Externo]&#xa;Sistema de Punto de Venta" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;fontColor=#ffffff;strokeColor=#736782;" vertex="1" parent="1">
+          <mxGeometry x="10" y="590" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-3" value="Procesador de Pagos&#xa;[Sistema Externo]&#xa;Procesa las transacciones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;fontColor=#ffffff;strokeColor=#736782;" vertex="1" parent="1">
+          <mxGeometry x="880" y="595" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-4" value="Portal de Comercio&#xa;[Contenedor: React]&#xa;Interfaz web para visualizar transacciones" style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;strokeColor2=#0E7DAD;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="10" y="890" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-5" value="Receptor de Transacciones&#xa;[Componente: Spring REST]&#xa;Recibe y valida las transacciones entrantes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="310" y="590" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-6" value="Validador de Transacciones&#xa;[Componente: Spring Service]&#xa;Ejecuta reglas de validación" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="640" y="590" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-7" value="Procesador de Transacciones&#xa;[Componente: Spring Service]&#xa;Procesa y enruta la transacción" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="310" y="735" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-8" value="Gestor de Estados&#xa;[Componente: Spring Service]&#xa;Maneja el ciclo de vida de la TX" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="640" y="735" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-9" value="Consulta de Transacciones&#xa;[Componente: Spring REST]&#xa;API para consultar transacciones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="310" y="905" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-10" value="Base de Datos Transaccional&#xa;[Contenedor: PostgreSQL]&#xa;Almacena transacciones y estados" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;size=15;fillColor=#23A2D9;strokeColor=#0E7DAD;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1075" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-11" value="Envía transacción&#xa;[REST/HTTP]" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#828282;" edge="1" parent="1" source="8yNeVxK6-ItUeaATUdKr-2" target="8yNeVxK6-ItUeaATUdKr-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-12" value="Valida datos&#xa;[Java]" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#828282;" edge="1" parent="1" source="8yNeVxK6-ItUeaATUdKr-5" target="8yNeVxK6-ItUeaATUdKr-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-13" value="Procesa transacción&#xa;[Java]" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#828282;" edge="1" parent="1" source="8yNeVxK6-ItUeaATUdKr-6" target="8yNeVxK6-ItUeaATUdKr-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-14" value="Gestiona estado&#xa;[Java]" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#828282;" edge="1" parent="1" source="8yNeVxK6-ItUeaATUdKr-7" target="8yNeVxK6-ItUeaATUdKr-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-15" value="Envía a procesar&#xa;[REST/HTTP]" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#828282;" edge="1" parent="1" source="8yNeVxK6-ItUeaATUdKr-8" target="8yNeVxK6-ItUeaATUdKr-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-16" value="Consulta datos&#xa;[JDBC]" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#828282;" edge="1" parent="1" source="8yNeVxK6-ItUeaATUdKr-9" target="8yNeVxK6-ItUeaATUdKr-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-17" value="Consulta transacciones&#xa;[REST/HTTP]" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#828282;" edge="1" parent="1" source="8yNeVxK6-ItUeaATUdKr-4" target="8yNeVxK6-ItUeaATUdKr-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yNeVxK6-ItUeaATUdKr-18" value="Persiste datos&#xa;[JDBC]" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;strokeColor=#828282;" edge="1" parent="1" source="8yNeVxK6-ItUeaATUdKr-8" target="8yNeVxK6-ItUeaATUdKr-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
