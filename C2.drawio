@@ -196,7 +196,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ytKktqc1NVt56C2rFt1x" name="Página-2">
-    <mxGraphModel dx="2977" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4513" dy="1491" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -321,142 +321,8 @@
             </mxGeometry>
           </mxCell>
         </object>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.459;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=light-dark(#4F4F4F,#FFFFFF);" parent="1" source="JS2vkZhOGshsVDL-lNQK-32" target="JS2vkZhOGshsVDL-lNQK-48" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2239" y="1933" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-30" value="Guarda el POS asignado a un comercio" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JS2vkZhOGshsVDL-lNQK-29" vertex="1" connectable="0">
-          <mxGeometry x="-0.1165" y="-3" relative="1" as="geometry">
-            <mxPoint y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <object placeholders="1" c4Name="Ver Comercios" c4Type="Component" c4Technology="Spring Bean" c4Description="Recupera la lista de comercios" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="JS2vkZhOGshsVDL-lNQK-32">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
-            <mxGeometry x="2119" y="1786" width="240" height="120" as="geometry" />
-          </mxCell>
-        </object>
-        <object placeholders="1" c4Name="Validar información POS " c4Type="Componente" c4Technology="Spring Bean" c4Description="Valida la Información del POS" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="JS2vkZhOGshsVDL-lNQK-34">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
-            <mxGeometry x="1630" y="1786" width="240" height="120" as="geometry" />
-          </mxCell>
-        </object>
-        <object placeholders="1" c4Name="Base de Datos" c4Type="Contenedor" c4Technology="MariaDB" c4Description="Guarda la información referente a los comercios" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="JS2vkZhOGshsVDL-lNQK-36">
-          <mxCell style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" parent="1" vertex="1">
-            <mxGeometry x="2559" y="1970" width="240" height="120" as="geometry" />
-          </mxCell>
-        </object>
-        <object placeholders="1" c4Name="Interfaz de usuario." c4Type="Contenedor" c4Technology="Next.JS" c4Description="Aplicación Front-end" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="JS2vkZhOGshsVDL-lNQK-39">
-          <mxCell style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;strokeColor=#118ACD;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" parent="1" vertex="1">
-            <mxGeometry x="1640" y="1545" width="240" height="160" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-42" value="MICROSERVICIO&amp;nbsp; GESTIÓN COMERCIO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1640" y="1489.5" width="240" height="30" as="geometry" />
-        </mxCell>
-        <object placeholders="1" c4Name="Validación Servicio" c4Type="Componente" c4Technology="Spring Bean" c4Description="Valuda la información del comercio" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="JS2vkZhOGshsVDL-lNQK-45">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
-            <mxGeometry x="2549" y="1562" width="240" height="120" as="geometry" />
-          </mxCell>
-        </object>
-        <object placeholders="1" c4Name="Guardar Comercio" c4Type="Componente" c4Technology="Spring Bean" c4Description="Almacena la información del comercio en a base de datos" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="JS2vkZhOGshsVDL-lNQK-46">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
-            <mxGeometry x="2549" y="1740" width="240" height="120" as="geometry" />
-          </mxCell>
-        </object>
         <mxCell id="JS2vkZhOGshsVDL-lNQK-47" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;DIAGRAMA&amp;nbsp; C2 Y C3 DEL SISTEMA PAYMENT GATEWAY&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="600" y="1030" width="1239" height="100" as="geometry" />
-        </mxCell>
-        <object placeholders="1" c4Name="Guardar POS de un Comercio" c4Type="Componente" c4Technology="Spring Bean" c4Description="Guarda Información del POS que pertenece a un comercio" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="JS2vkZhOGshsVDL-lNQK-48">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
-            <mxGeometry x="2129" y="1973" width="240" height="120" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-50" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#686868,#FFFFFF);entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="JS2vkZhOGshsVDL-lNQK-39" target="JS2vkZhOGshsVDL-lNQK-45" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2049" y="1631.7399999999998" as="sourcePoint" />
-            <mxPoint x="2479" y="1632" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-51" value="Solicitud para validar información de POS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JS2vkZhOGshsVDL-lNQK-50" vertex="1" connectable="0">
-          <mxGeometry x="-0.0844" y="4" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-52" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.465;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#5F5F5F,#FFFFFF);" parent="1" source="JS2vkZhOGshsVDL-lNQK-39" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2200" y="1703" as="sourcePoint" />
-            <mxPoint x="1750" y="1783" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1750" y="1753" />
-              <mxPoint x="1750" y="1773" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-53" value="Valida información de comercio" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JS2vkZhOGshsVDL-lNQK-52" vertex="1" connectable="0">
-          <mxGeometry x="-0.1299" y="-3" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-54" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.004;entryY=0.394;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.006;exitY=0.404;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#686868,#FFFFFF);" parent="1" source="JS2vkZhOGshsVDL-lNQK-34" target="JS2vkZhOGshsVDL-lNQK-32" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2369" y="1703" as="sourcePoint" />
-            <mxPoint x="2419" y="1653" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-55" value="Recupera la lista de comercios" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JS2vkZhOGshsVDL-lNQK-54" vertex="1" connectable="0">
-          <mxGeometry x="-0.2045" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-56" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.454;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=light-dark(#6C6C6C,#FFFFFF);" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2670" y="1680" as="sourcePoint" />
-            <mxPoint x="2670.37" y="1739.04" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-57" value="Guarda la información validada del comercio" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JS2vkZhOGshsVDL-lNQK-56" vertex="1" connectable="0">
-          <mxGeometry x="-0.2806" y="-4" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-58" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#555555,#FFFFFF);" parent="1" source="JS2vkZhOGshsVDL-lNQK-32" target="JS2vkZhOGshsVDL-lNQK-36" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2409" y="1873" as="sourcePoint" />
-            <mxPoint x="2459" y="1823" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-59" value="Consulta la lista de comercios" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JS2vkZhOGshsVDL-lNQK-58" vertex="1" connectable="0">
-          <mxGeometry x="0.0173" y="4" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-60" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.583;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.006;exitY=0.606;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#686868,#FFFFFF);" parent="1" source="JS2vkZhOGshsVDL-lNQK-48" target="JS2vkZhOGshsVDL-lNQK-36" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2419" y="2073" as="sourcePoint" />
-            <mxPoint x="2469" y="2023" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-61" value="Inserta la&amp;nbsp;&lt;br&gt;informacion en la base de datos" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JS2vkZhOGshsVDL-lNQK-60" vertex="1" connectable="0">
-          <mxGeometry x="0.0079" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-62" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.449;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#727272,#FFFFFF);" parent="1" source="JS2vkZhOGshsVDL-lNQK-46" target="JS2vkZhOGshsVDL-lNQK-36" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2609" y="1930" as="sourcePoint" />
-            <mxPoint x="2659" y="1880" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JS2vkZhOGshsVDL-lNQK-63" value="Inserta el comercio en la base de datos" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JS2vkZhOGshsVDL-lNQK-62" vertex="1" connectable="0">
-          <mxGeometry x="-0.1233" y="-3" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="JS2vkZhOGshsVDL-lNQK-81" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;C3 Gestión Comercio&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1979" y="1389.5" width="490" height="100" as="geometry" />
@@ -884,6 +750,140 @@
         </mxCell>
         <mxCell id="0-VHxmB8gDWy1a90MpPI-30" value="Persiste datos&#xa;[JDBC]" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;strokeColor=#828282;fontSize=16;" edge="1" parent="1" source="0-VHxmB8gDWy1a90MpPI-20" target="0-VHxmB8gDWy1a90MpPI-22">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.459;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=light-dark(#4F4F4F,#FFFFFF);fontSize=16;" edge="1" parent="1" source="xnxWEHv8GR8iYgWMqCU3-3" target="xnxWEHv8GR8iYgWMqCU3-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2200" y="1961.75" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-2" value="Guarda el POS asignado a un comercio" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="xnxWEHv8GR8iYgWMqCU3-1">
+          <mxGeometry x="-0.1165" y="-3" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Ver Comercios" c4Type="Component" c4Technology="Spring Bean" c4Description="Recupera la lista de comercios" label="&lt;font&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="xnxWEHv8GR8iYgWMqCU3-3">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontSize=16;" vertex="1" parent="1">
+            <mxGeometry x="2080" y="1814.75" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Validar información POS " c4Type="Componente" c4Technology="Spring Bean" c4Description="Valida la Información del POS" label="&lt;font&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="xnxWEHv8GR8iYgWMqCU3-4">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontSize=16;" vertex="1" parent="1">
+            <mxGeometry x="1640" y="1814.75" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Base de Datos" c4Type="Contenedor" c4Technology="MariaDB" c4Description="Guarda la información referente a los comercios" label="&lt;font&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" id="xnxWEHv8GR8iYgWMqCU3-5">
+          <mxCell style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=16;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1" parent="1">
+            <mxGeometry x="2570" y="2001.75" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Interfaz de usuario." c4Type="Contenedor" c4Technology="Next.JS" c4Description="Aplicación Front-end" label="&lt;font&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" id="xnxWEHv8GR8iYgWMqCU3-6">
+          <mxCell style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;strokeColor=#118ACD;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=16;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1" parent="1">
+            <mxGeometry x="1650" y="1573.75" width="240" height="160" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-7" value="MICROSERVICIO&amp;nbsp; GESTIÓN COMERCIO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="1518.25" width="240" height="30" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="Validación Servicio" c4Type="Componente" c4Technology="Spring Bean" c4Description="Valuda la información del comercio" label="&lt;font&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="xnxWEHv8GR8iYgWMqCU3-8">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontSize=16;" vertex="1" parent="1">
+            <mxGeometry x="2560" y="1593.75" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Guardar Comercio" c4Type="Componente" c4Technology="Spring Bean" c4Description="Almacena la información del comercio en a base de datos" label="&lt;font&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="xnxWEHv8GR8iYgWMqCU3-9">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontSize=16;" vertex="1" parent="1">
+            <mxGeometry x="2560" y="1771.75" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Guardar POS de un Comercio" c4Type="Componente" c4Technology="Spring Bean" c4Description="Guarda Información del POS que pertenece a un comercio" label="&lt;font&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="xnxWEHv8GR8iYgWMqCU3-10">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontSize=16;" vertex="1" parent="1">
+            <mxGeometry x="2090" y="2001.75" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#686868,#FFFFFF);entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=16;" edge="1" parent="1" source="xnxWEHv8GR8iYgWMqCU3-6" target="xnxWEHv8GR8iYgWMqCU3-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2059" y="1660.4899999999998" as="sourcePoint" />
+            <mxPoint x="2489" y="1660.75" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-12" value="Solicitud para validar información de POS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="xnxWEHv8GR8iYgWMqCU3-11">
+          <mxGeometry x="-0.0844" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.465;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#5F5F5F,#FFFFFF);fontSize=16;" edge="1" parent="1" source="xnxWEHv8GR8iYgWMqCU3-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2210" y="1731.75" as="sourcePoint" />
+            <mxPoint x="1760" y="1811.75" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1760" y="1781.75" />
+              <mxPoint x="1760" y="1801.75" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-14" value="Valida información de comercio" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="xnxWEHv8GR8iYgWMqCU3-13">
+          <mxGeometry x="-0.1299" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.004;entryY=0.394;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.006;exitY=0.404;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#686868,#FFFFFF);fontSize=16;" edge="1" parent="1" source="xnxWEHv8GR8iYgWMqCU3-4" target="xnxWEHv8GR8iYgWMqCU3-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2379" y="1731.75" as="sourcePoint" />
+            <mxPoint x="2429" y="1681.75" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-16" value="Recupera la &lt;br&gt;lista de comercios" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="xnxWEHv8GR8iYgWMqCU3-15">
+          <mxGeometry x="-0.2045" y="1" relative="1" as="geometry">
+            <mxPoint x="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.454;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=light-dark(#6C6C6C,#FFFFFF);fontSize=16;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2681" y="1711.75" as="sourcePoint" />
+            <mxPoint x="2681.37" y="1770.79" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-18" value="Guarda la información validada del comercio" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="xnxWEHv8GR8iYgWMqCU3-17">
+          <mxGeometry x="-0.2806" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#555555,#FFFFFF);fontSize=16;" edge="1" parent="1" source="xnxWEHv8GR8iYgWMqCU3-3" target="xnxWEHv8GR8iYgWMqCU3-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2370" y="1901.75" as="sourcePoint" />
+            <mxPoint x="2420" y="1851.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-20" value="Consulta la lista de comercios" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="xnxWEHv8GR8iYgWMqCU3-19">
+          <mxGeometry x="0.0173" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.583;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.006;exitY=0.606;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#686868,#FFFFFF);fontSize=16;" edge="1" parent="1" source="xnxWEHv8GR8iYgWMqCU3-10" target="xnxWEHv8GR8iYgWMqCU3-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2380" y="2101.75" as="sourcePoint" />
+            <mxPoint x="2430" y="2051.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-22" value="Inserta la&amp;nbsp;&lt;br&gt;informacion &lt;br&gt;en la base de datos" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="xnxWEHv8GR8iYgWMqCU3-21">
+          <mxGeometry x="0.0079" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.449;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=light-dark(#727272,#FFFFFF);fontSize=16;" edge="1" parent="1" source="xnxWEHv8GR8iYgWMqCU3-9" target="xnxWEHv8GR8iYgWMqCU3-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2620" y="1961.75" as="sourcePoint" />
+            <mxPoint x="2670" y="1911.75" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xnxWEHv8GR8iYgWMqCU3-24" value="Inserta el comercio &lt;br&gt;en la base de datos" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="xnxWEHv8GR8iYgWMqCU3-23">
+          <mxGeometry x="-0.1233" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
